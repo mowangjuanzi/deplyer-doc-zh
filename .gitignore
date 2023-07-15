@@ -1,0 +1,5 @@
+# https://github.com/vuejs/vitepress/blob/main/.gitignore
+.DS_Store
+cache
+dist
+node_modules
