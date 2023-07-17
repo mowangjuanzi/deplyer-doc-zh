@@ -12,6 +12,10 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: "安装",
+        link: "/installation.md"
+      },
+      {
         text: '入门',
         link: "/getting-started.md"
       }
