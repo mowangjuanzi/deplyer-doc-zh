@@ -7,7 +7,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '文档', link: '/getting-started.md' },
+      { text: "Recipes", link: "/recipe/" },
+      { text: "贡献", link: "/contrib/"}
     ],
 
     sidebar: [

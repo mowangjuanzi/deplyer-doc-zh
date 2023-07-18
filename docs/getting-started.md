@@ -18,8 +18,8 @@ dep init
 ```
 
 Deployer 将询问几个问题，完成后将会有 **deploy.php** 或 **deploy.yaml**
-文件。这是部署脚本。包含主机，任务和需要的其它脚本。Deployer 带有所有框架的脚本并且全部基于
-[common](recipe/common.md) 脚本。
+文件。这是部署 recipe。包含主机，任务和需要的其它 recipe。Deployer 带有所有框架的 recipe 并且全部基于
+[common](recipe/common.md) recipe。
 
 ## Provision
 
@@ -29,18 +29,18 @@ Deployer 将询问几个问题，完成后将会有 **deploy.php** 或 **deploy.
 
 在 Linode、DigitalOcean、Vultr、AWS、GCP 等等上创建新的 VPS。
 
-请确保使用的镜像是 **Ubuntu 20.04 LTS**，因为这个版本是借助 Deployer [provision](recipe/provision.md) 脚本提供支持。
+请确保使用的镜像是 **Ubuntu 20.04 LTS**，因为这个版本是借助 Deployer [provision](recipe/provision.md) recipe 提供支持。
 
 :::tip
 在服务器上配置反向 DNS 或 RDNS。这将允许服务器使用域名而不是 IP 地址使用 SSH 登录。
 :::
 
-**deploy.php** 脚本包含使用一些重要参数定义的主机：
+**deploy.php** recipe 包含使用一些重要参数定义的主机：
 
 - `remote_user` ssh 连接的用户名，
 - `deploy_path` 将要调用的主机路径。
 
-将 `remote_user` 设置为 `deployer`。目前，新服务器可能只有 `root` 用户。provision 脚本将创建并配置 `deployer` 用户。
+将 `remote_user` 设置为 `deployer`。目前，新服务器可能只有 `root` 用户。provision recipe 将创建并配置 `deployer` 用户。
 
 ```php
 host('example.org')
@@ -131,7 +131,7 @@ location / {
 }
 ```
 
-如果使用 provision 脚本，Deployer 将自动配置 Caddy Web 服务器从 [public_path](/recipe/provision/website.md#public_path) 提供服务。
+如果使用 provision recipe，Deployer 将自动配置 Caddy Web 服务器从 [public_path](/recipe/provision/website.md#public_path) 提供服务。
 
 现在在主机上添加构建步骤：
 

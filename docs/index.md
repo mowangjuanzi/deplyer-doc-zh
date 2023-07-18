@@ -4,7 +4,8 @@ layout: home
 
 hero:
   name: "deployer"
-  text: "Deployer 中文文档"
+  text: "部署 PHP 无处不在"
+  tagline: PHP 部署工具，支持开箱即用的流行框架
   actions:
     - theme: brand
       text: 入门
