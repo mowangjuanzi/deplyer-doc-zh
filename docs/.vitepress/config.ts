@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "deployer",
+  title: "Deployer",
   ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -20,6 +20,9 @@ export default defineConfig({
       {
         text: '入门',
         link: "/getting-started.md"
+      },
+      {
+        text: "基础", link: "/basics.md"
       }
     ],
 
